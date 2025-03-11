@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #2c2f33;
+    color: aliceblue;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container {
+    width: 90%;
+    max-width: 800px;
+    background: #23272a;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.3);
+}
+header h1 {
+    margin-top: 5%;
+    font-size: 2em;
+    margin-bottom: 5px;
+}
+header h2 {
+    font-size: 1.2em;
+    color: #ddd;
+    margin-bottom: 20px;
+}
+.perfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+img {
+    max-width: 40%;
+    max-height: 40%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    border: 3px solid chocolate;
+}
+.bio {
+    max-width: 600px;
+    text-align: justify;
+    padding: 0 10px;
+}
+.hobbies {
+    margin-top: 20px;
+}
+.hobbies ul {
+    list-style: none;
+    padding: 0;
+}
+.hobbies li {
+    background: chocolate;
+    margin: 5px 0;
+    padding: 8px;
+    border-radius: 5px;
+}
+footer {
+    margin-top: 20px;
+}
+.social-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: aliceblue;
+    background: #444;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.social-links a:hover {
+    background: #444;
+}
+.destaque-paragrafo {
+    color: darkorange;
+}
+.destaque-paragrafo-2 {
+    color:darkorange;
+}

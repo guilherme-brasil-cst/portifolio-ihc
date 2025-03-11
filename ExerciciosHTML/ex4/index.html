@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reflexões sobre Tecnologia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Reflexões sobre Tecnologia</h1>
+    </header>
+    <main>
+        <article class="post">
+            <h2>A Singularidade Tecnológica: O que nos aguarda?</h2>
+            <p class="data">Publicado em 11 de março de 2025</p>
+            <img src="tec.png" alt="Imagem Sobre Tecnologia" class="post-img">
+            <p class="conteudo">A evolução tecnológica tem avançado em um ritmo exponencial. Mas até onde isso pode nos levar? A ideia da singularidade tecnológica sugere um ponto onde as inteligências artificiais superarão a capacidade cognitiva humana. Esse evento pode ser o maior marco da humanidade – ou seu maior desafio. Estamos preparados para essa revolução?</p>
+        </article>
+        <section class="comentarios">
+            <h3>Deixe um comentário:</h3>
+            <form id="comentarioForm">
+                <input type="text" id="nome" placeholder="Seu nome" required>
+                <input type="email" id="email" placeholder="Seu email" required>
+                <textarea id="comentario" placeholder="Seu comentário" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+            <h3>Comentários:</h3>
+            <div id="listaComentarios"></div>
+        </section>
+    </main>
+    <footer>
+        <p>Contato: <a href="mailto:seuemail@example.com">seuemail@example.com</a></p>
+    </footer>
+    <script>
+        document.getElementById("comentarioForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            let nome = document.getElementById("nome").value;
+            let comentario = document.getElementById("comentario").value;
+            let lista = document.getElementById("listaComentarios");
+            let novoComentario = document.createElement("p");
+            novoComentario.innerHTML = `<strong>${nome}:</strong> ${comentario}`;
+            lista.appendChild(novoComentario);
+            document.getElementById("comentarioForm").reset();
+        });
+    </script>
+</body>
+</html>

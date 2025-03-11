@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100%;
+    background-color: #343131;
+}
+h1 {
+    font-weight: bold;
+    color:rgb(210, 105, 30);
+}
+p {
+    color: aliceblue;
+    
+}
+.destaque-paragrafo {
+    color: chocolate;
+}
+a {
+    font-weight: bold;
+    color:#d2691e;
+
+
+}
+.apresentacao {
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+img {
+    max-width: 40%;
+    height: auto;
+    border-radius: 8px;
+    
+}
+.apresentacao__texto {
+    width: 615px;
+    
+}
+.apresentacao__texto__titulo {
+    font-size: 46px;
+}
+.apresentacao__texto__paragrafo {
+    font-size: 24px;
+}
