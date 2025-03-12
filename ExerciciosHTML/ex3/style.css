@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
 body {
     font-family: 'Arial', sans-serif;
     background-color: #242424;
@@ -14,6 +17,9 @@ header {
     padding: 20px;
     text-align: center;
     color: #FF8C00;
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
 main {
     width: 80%;
@@ -27,10 +33,25 @@ main {
     border-radius: 8px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
+.sobre-paragrafo {
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+.sobre-titulo {
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
 .botoes-atividades {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+}
+.repositorio, .atividades {
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 .botao {
     background: #FF8C00;
