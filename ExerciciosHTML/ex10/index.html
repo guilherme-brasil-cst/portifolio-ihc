@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QuantumFlix - O Portal do Cinema e Ciência</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -14,24 +15,71 @@
     
     <main>
         <section class="filmes-container">
+            <!-- Filme 1 -->
             <div class="filme">
                 <h2>O Jogo da Imitação (2014)</h2>
-                <iframe src="https://www.youtube.com/embed/nuPZUUED5uk" allowfullscreen></iframe>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/nuPZUUED5uk" allowfullscreen></iframe>
+                </div>
                 <p>A história de Alan Turing, o gênio que decifrou o código Enigma e revolucionou a computação.</p>
+                <div class="rating">
+                    <span class="star" data-value="1">&#9733;</span>
+                    <span class="star" data-value="2">&#9733;</span>
+                    <span class="star" data-value="3">&#9733;</span>
+                    <span class="star" data-value="4">&#9733;</span>
+                    <span class="star" data-value="5">&#9733;</span>
+                </div>
             </div>
 
+            <!-- Filme 2 -->
             <div class="filme">
                 <h2>Interestelar (2014)</h2>
-                <iframe src="https://www.youtube.com/embed/UoSSbmD9vqc" allowfullscreen></iframe>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/UoSSbmD9vqc" allowfullscreen></iframe>
+                </div>
                 <p>Uma jornada épica pelo espaço e tempo, explorando buracos de minhoca e realidades alternativas.</p>
+                <div class="rating">
+                    <span class="star" data-value="1">&#9733;</span>
+                    <span class="star" data-value="2">&#9733;</span>
+                    <span class="star" data-value="3">&#9733;</span>
+                    <span class="star" data-value="4">&#9733;</span>
+                    <span class="star" data-value="5">&#9733;</span>
+                </div>
             </div>
 
+            <!-- Filme 3 -->
             <div class="filme">
                 <h2>Matrix (1999)</h2>
-                <iframe src="https://www.youtube.com/embed/m8e-FF8MsqU" allowfullscreen></iframe>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/m8e-FF8MsqU" allowfullscreen></iframe>
+                </div>
                 <p>O clássico que redefiniu a ficção científica, questionando a realidade e o poder da mente humana.</p>
+                <div class="rating">
+                    <span class="star" data-value="1">&#9733;</span>
+                    <span class="star" data-value="2">&#9733;</span>
+                    <span class="star" data-value="3">&#9733;</span>
+                    <span class="star" data-value="4">&#9733;</span>
+                    <span class="star" data-value="5">&#9733;</span>
+                </div>
             </div>
         </section>
     </main>
+
+    <script>
+        // JavaScript para o sistema de estrelas
+        document.querySelectorAll('.rating .star').forEach(star => {
+            star.addEventListener('click', () => {
+                const value = star.getAttribute('data-value');
+                const ratingContainer = star.parentElement;
+                ratingContainer.querySelectorAll('.star').forEach(s => {
+                    if (s.getAttribute('data-value') <= value) {
+                        s.classList.add('selected');
+                    } else {
+                        s.classList.remove('selected');
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>
